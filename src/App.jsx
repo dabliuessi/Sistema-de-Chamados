@@ -8,10 +8,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 function App() {
   return (
     <Routes>
-      {/* Login fica na rota "/" */}
       <Route path="/" element={<Login />} />
-
-      {/* Opcional: se alguém entrar em /login, manda pra / */}
       <Route path="/login" element={<Navigate to="/" replace />} />
 
       <Route path="/register" element={<Register />} />
